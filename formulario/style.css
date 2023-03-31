@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: helvetica, arial;
+}
+
+body {
+    background-color: #CCC;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    width: 500px;
+    height: 500px;
+    text-align: left;
+    border: 1px solid black;
+    background-color:#a897ff;
+    position: absolute;
+    margin: 33%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    padding-left: 50px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px #000000;
+    border:0;
+}
+
+.titulo {
+    color: #000;
+    font-size: 1em;
+    padding-top: 15px;
+    margin-left: 8%;
+    text-shadow: 1px 1px 1px ;
+}
+
+.nome, .sobrenome, .email, .nascimento {
+    padding-top: 3px;
+    font-weight: bold;
+    color: black;
+}
+
+input[type="text"], input[type="email"], input[type="date"]{
+    display: block;
+    padding: 10px;
+    margin-top: 3px;
+    border-radius: 20px;
+    width: 90%;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="date"]:hover {
+    background-color: #d9d2ff;
+}
+
+
+.titulo-lado {
+    font-size: 1em;
+    padding-top: 3px;
+    font-weight: bold;
+    color: #000;
+}
+
+.lados {
+    padding: 10px 0px 0px 25px;
+    font-weight: 600;
+}
+
+
+.datalist {
+    padding-top: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+.linguagens {
+    padding: 10px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.linguagens:hover{
+    background-color: #d9d2ff;
+}
+
+input, select {
+    border-radius: 5px;
+}
+
+.btn {
+    justify-self: center;
+    padding: 10px 5px 10px 5px;
+    width: 20%;
+    transition: 0.1s;
+    border-radius: 20px;
+    margin: 3% 0% 0% 35%; 
+}
+
+.btn:hover {
+    background-color: #b4a7f9;
+    border: 2px solid #7b64ff;
+}

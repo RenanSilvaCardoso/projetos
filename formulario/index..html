@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="titulo">
+            <h1>Projeto Formulário</h1>
+        </div>
+        <div class="dados">
+            <div class="nome">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Digite aqui...">
+            </div>
+            <div class="sobrenome">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" placeholder="Digite aqui...">
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Digite aqui..."> 
+            </div>
+            <div class="nascimento">
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" name="nascimento">
+            </div>
+        </div>
+        <div class="lado">
+            <div class="titulo-lado">
+                <label>De qual lado você gosta de desenvolver?</label>
+            </div>
+            <div class="lados">
+                <input type="checkbox" name="front"><label>Front-end</label>
+                <input type="checkbox" name="back"><label>Back-end</label>
+                <input type="checkbox" name="full"><label>Fullstack</label>
+            </div>
+            <div class="datalist">
+                <label>Qual sua melhor linguagem de programação:</label>
+                    <select class="linguagens" placeholder="selecione aqui">
+                        <option value="Selecione aqui..." selected> --Selecione aqui-- </option>
+                        <option value="Javascript"> Javascript </option>
+                        <option value="Java"> Java </option>
+                        <option value="Python"> Python </option>
+                        <option value="Php"> Php </option>
+                        <option value="C"> C </option>
+                        <option value="C++"> C++ </option>
+                        <option value="C#"> C# </option>
+                        <option value="Progress"> Progress </option>
+                    </select>
+            </div>
+        </div>
+                <input class="btn" type="button" value="Enviar">
+    </form>
+</body>
+</html>
