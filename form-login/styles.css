@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-color: #ccc;
+}
+
+.form {
+    background-color: #fff;
+    max-width: 500px;
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.form .dados {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: #ccc;
+    margin-top: 10px;
+    transition: .4s;
+}
+
+.form .dados i {
+    margin-left: 20px;
+}
+
+.form .dados input {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    padding: 15px;
+}
+
+.form .dados:hover {
+    background-color: #979797;
+    scale: 1.01;
+}
+
+.form .dados input:focus-visible {
+    outline: none;
+}
+
+
+.form .forget-password{
+    text-align: center;
+    padding: 20px;
+}
+
+.form .forget-password a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.form .login-btn input{
+    font-size: 18px;
+    color: #000;
+    background-color: #ccc;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    transition: .4s;
+}
+
+.form .login-btn input:hover{
+    background-color: #979797;
+    scale: 1.01;
+}
+
+.form .login-btn input:focus-visible{
+    outline: none;
+}
+
+.or p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.rede-social i{
+    padding: 20px 10px;
+    font-size: 40px;
+    color: #000;
+    transition: .4s;
+}
+
+.rede-social i:hover {
+    scale: 1.1;
+}
+
+@media screen and (max-width: 800px){
+    .form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .form {
+        width: 80%;
+    }
+}
