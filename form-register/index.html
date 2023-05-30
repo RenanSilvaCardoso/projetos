@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Registro</title>
+    
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="titulo">
+                <h1>Registro</h1>
+            </div>
+
+            <div class="container-dados">
+                <div class="dados">
+                    <input type="text" name="user" placeholder="Nome de Usuário" required autofocus> <span><i class="fa-solid fa-user"></i></span>
+                </div>
+                <div class="dados">
+                    <input type="email" name="email" placeholder="Email" required> <label for="emailconfirm"><i class="fa-solid fa-envelope"></i></i></label>
+                </div>
+                <div class="dados">
+                    <input type="email" name="emailconfirm" placeholder="Confirme seu email" required> <label for="emailconfirm"><i class="fa-solid fa-envelope"></i></i></label>
+                </div>
+                <div class="dados">
+                    <input type="password" name="password" placeholder="Senha" required> <label for="password"><i class="fa-solid fa-key"></i></label>
+                </div> 
+            </div>
+            <button type="submit" value="register">Registrar</button>
+            <div class="have-account">
+                <p>Já tem uma conta? <a href="#">Entrar</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
