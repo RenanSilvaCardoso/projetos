@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container .titulo h1 {
+    text-align: center;
+}
+
+.container .conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(49, 49, 255, 0.37);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+}
+
+.container .conteudo .container-informacao {
+    margin-left: 2%;
+}
+
+.container .conteudo .container-informacao h2 {
+    text-align: center;
+}
+
+.container .conteudo .container-dados {
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.container .conteudo .container-dados .titulo-calc h2{   
+    margin-top: 100px;
+}
+
+.container .conteudo .container-dados .altura {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 300px;
+    background-color: #ccc;
+}
+
+.container .conteudo .container-dados .altura input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: black;
+    -moz-appearance: textfield;
+}
+
+.container .conteudo .container-dados .altura input::placeholder{
+    color: black;
+    font-weight: 500;
+}
+
+.container .conteudo .container-dados .altura input::-webkit-inner-spin-button,
+.container .conteudo .container-dados .altura input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container .conteudo .container-dados .peso {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    width: 300px;
+    background-color: #ccc;
+}
+
+.container .conteudo .container-dados .peso input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    -moz-appearance: textfield;
+    width: 100%;
+}
+
+.container .conteudo .container-dados .peso input::placeholder{
+    color: black;
+    font-weight: 500;
+}
+
+.container .conteudo .container-dados .peso input::-webkit-inner-spin-button,
+.container .conteudo .container-dados .peso input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container .conteudo .container-dados .buttons {
+    margin-top: 10px;
+}
+
+.container .conteudo .container-dados .buttons button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.container .conteudo .container-dados .buttons button:hover {
+    transform: scale(1.08);
+}
+
+.container .conteudo .container-dados .buttons .calc {
+    background-color: blue;
+    color: #fff;
+    font-weight: 600;
+}
+
+.container .conteudo .container-dados .buttons .limpar {
+    background-color: orangered;
+    color: black;
+    font-weight: 600;
+}
+
+.container .conteudo .container-dados .resultado {
+    width: 20%
+}
+
+.container .conteudo .container-dados .resultado p {
+    /* text-align: center; */
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.container .conteudo .container-dados .resultado span {
+    font-weight: 600;
+}

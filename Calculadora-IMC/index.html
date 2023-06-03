@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <div class="container">    
+        <div class="titulo">
+            <h1>Calculadora de IMC</h1>
+        </div>
+
+        <div class="conteudo">
+            <div class="container-informacao">
+                <h2>Como funciona o cálculo?</h2>
+                <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+                <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+                <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+            </div>
+            
+            <div class="container-dados">
+                
+                <div class="tituto-calc">
+                    <h2>Calcule seu IMC:</h2>
+                </div>
+
+                <div class="altura">
+                    <input type="number" id="altura" placeholder="Digite sua altura(EX.: 1,70)" required maxlength="4">
+                </div>
+                <div class="peso">
+                    <input type="number" id="peso" placeholder="Digite seu peso em Kg(Ex.: 68)" required>
+                </div>
+                <div class="buttons">
+                    <button class="calc" id="calcular" onclick="calcular()">Calcular</button>
+                    <button class="limpar" id="limpar" onclick="limpaTela()">Limpar</button>
+                </div>
+                <div class="resultado">
+                    <p class="result">Seu IMC: <span id="imc"></span></p> 
+                    <p class="classificacao" >Classificação: <span id="classificacao"></span></p> 
+                    <p class="obesidade" >Obesidade(grau): <span id="grau"></span></p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
