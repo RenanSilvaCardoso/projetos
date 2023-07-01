@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'teko', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+.container {
+    max-width: 500px;
+    width: 90%;
+    max-height: 200px;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+}
+
+.temp {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    min-width: 200px;
+}
+
+.minuto, .seg, .ms {
+    font-size: 5rem;
+}
+
+.temp .alt {
+    font-size: 1.5rem;
+}
+
+.container-btn {
+    display: flex;
+    gap: 1.3rem;
+}
+
+button {
+    padding: 0.2rem 1.5rem;
+    font-size: 2rem;
+}
+
+#iniciar {
+    background-color: rgba(0, 128, 0, 0.589);
+    border-radius: 0.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+#pausar {
+    background-color: rgba(255, 255, 0, 0.699);
+    border-radius: 0.8rem;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+#zerar {
+    background-color: rgba(255, 0, 0, 0.616);
+    border-radius: 0.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+#continuar {
+    background-color: rgba(46, 108, 201, 0.616);
+    border-radius: 0.8rem;
+    border: none;
+    cursor: pointer;
+    display: none;
+}

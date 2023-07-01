@@ -26,8 +26,34 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: rgba(71, 71, 71, 0.384);
+    position: relative;
+}
+
+.hora, .minuto, .segundo {
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #aaaaaa5b;
 }
 
 .container span{
     font-size: 5rem;
+}
+
+.ponto {
+    color: white;
+}
+
+p {
+    position: relative;
+}
+
+p::after {
+    content: " ";
+    width: 10px;
+    height: 5px;
+    background-color: red;
+    top: 0;
+    left: 0;
 }
