@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ccc;
+}
+
+#stats {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/cau-hansen.jpg);
+    background-size: cover;
+    position: relative;
+    
+}
+
+.gradient {
+    background: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 0, rgba(0,0,0,0) 60%, rgba(0,0,0,0.9)100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.containerStats {
+    height: 90%;
+    max-height: 1000px;
+    width: 80%;
+    max-width: 80%;
+    box-shadow: 2px 2px 7px #ccccccb4;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13rem;
+    background-color: rgba(255, 255, 255, 0.178);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1;
+}
+
+.imgBox .fotoStats {
+    width: 550px;
+    position: relative;
+}
+
+.imgBox::after{
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 56%;
+    left: 50%;
+    top: 23%;
+    background-color: black;
+    display: block;
+}
+
+.statsBox h1 {
+    font-size: 4rem;
+}
+
+.statsBox .stats {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.statsBox .info {
+    font-size: 1.5rem;
+}
+
+.fotos-titulo {
+    text-align: center;
+    font-size: 4rem;
+
+}
+
+#fotos {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2d3436;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.7) 0, rgba(0,0,0,0) 60%, rgba(0,0,0,0.7)100%);
+}
+
+#fotos .titulo-fotos {
+    height: 10%;
+}
+
+#fotos .titulo-fotos h3 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+#fotos img {
+    max-width: 100%;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.slider-wrapper {
+    padding: 30px;
+    height: 90%;
+}
+
+.splide__arrow {
+    opacity: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgb(194, 194, 0);
+}
+
+.splide__pagination {
+    bottom: -1.5rem;
+}
+
+.slider-wrapper .splide__pagination__page.is-active {
+    opacity: 1;
+    background-color: rgb(194, 194, 0);
+}
+
+.splide__track {
+    padding: .5rem;
+}
+
+#highlights {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2d3436;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.7) 0, rgba(0,0,0,0) 60%, rgba(0,0,0,0.7)100%);
+}
+
+.container-highlights h3 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+#highlights .video {
+    padding: 1.875rem;
+}
+
+#redes {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2d3436;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.7) 0, rgba(0,0,0,0) 60%, rgba(0,0,0,0.7)100%);
+}
+
+#redes .titulo-redes {
+    height: 20%;
+    width: 100%;
+}
+
+#redes .titulo-redes  h3{
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 4rem;
+}
+
+#redes .container-redes {
+    height: 80%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#redes .container-redes .redes i {
+    cursor: pointer;
+    font-size: 3rem;
+    color: #fff;
+    transition: .4s;
+}
+
+#redes .container-redes .redes i:hover {
+    scale: 1.2;
+}
+
+@media screen and (max-width: 767px){
+    .containerStats {
+        height: 60%;
+        gap: 2rem;
+    }
+    
+    .imgBox .fotoStats {
+        width: 300px;
+        position: relative;
+    }
+    
+    .statsBox h1 {
+        font-size: 2rem;
+    }
+    
+    .statsBox .stats {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .statsBox .info {
+        font-size: 1.5rem;
+    }
+    
+    .fotos-titulo {
+        text-align: center;
+        font-size: 2rem;
+    
+    }
+
+    iframe {
+        width: 600px;
+        height: 375px;;
+    }
+}
+
+
+@media screen and (min-width: 640px){
+    .slider-wrapper .splide {
+        padding: 0 1rem;
+    }
+}
