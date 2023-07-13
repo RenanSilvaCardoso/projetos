@@ -198,23 +198,22 @@ body {
     scale: 1.2;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1281px){
     .containerStats {
-        height: 60%;
-        gap: 2rem;
+        height: 80%;
+        gap: 8rem;
     }
     
     .imgBox .fotoStats {
-        width: 300px;
-        position: relative;
+        width: 22rem;
     }
     
     .statsBox h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     
     .statsBox .stats {
-        font-size: 1rem;
+        font-size: 2rem;
         font-weight: 500;
     }
     
@@ -229,11 +228,132 @@ body {
     }
 
     iframe {
+        width: 700px;
+        height: 394px;
+    }
+    
+    #redes .titulo-redes  h3{
+        font-size: 2.5rem;
+        margin-top: 2.5rem;
+    }
+    
+    #redes .container-redes {
+        width: 15%;
+    }
+    
+    #redes .container-redes .redes i {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 835px){
+    .containerStats {
+        height: 60%;
+        gap: 1rem;
+    }
+    
+    .imgBox .fotoStats {
+        width: 15.75rem;
+    }
+
+    .imgBox::after{
+        left: 44%;
+        top: 15%;
+        height: 69%;
+    }
+    
+    .statsBox h1 {
+        font-size: 2rem;
+    }
+
+    
+    .statsBox .stats {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .statsBox .info {
+        font-size: 1rem;
+    }
+    
+    .fotos-titulo {
+        text-align: center;
+        font-size: 2rem;
+    
+    }
+
+    iframe {
         width: 600px;
         height: 375px;;
     }
 }
 
+@media screen and (max-width: 440px) {
+    .containerStats {
+        height: 90%;
+        flex-direction: column;
+    }
+    
+    .imgBox .fotoStats {
+        width: 11rem;
+    }
+
+    .imgBox::after{
+        display: none;
+    }
+    
+    .statsBox h1 {
+        font-size: 2rem;
+    }
+
+    
+    .statsBox .stats {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    
+    .statsBox .info {
+        font-size: 1rem;
+    }
+
+    .tittle-highlights h3 {
+        font-size: 2rem;
+    }
+
+    iframe {
+        width: 400px;
+        height: 225px;
+    }
+
+    #redes .titulo-redes  h3{
+        font-size: 2rem;
+        margin-top: 2.5rem;
+    }
+    
+    #redes .container-redes {
+        width: 30%;
+    }
+    
+    #redes .container-redes .redes i {
+        font-size: 2rem;
+    }
+
+    #fotos, #highlights{
+        height: 70vh;
+    }
+}
+
+
+@media screen and (max-width: 391px){
+    .imgBox .fotoStats {
+        width: 10rem;
+    }
+    
+    iframe {
+        width: 370px;
+        height: 209px;
+    }
+}
 
 @media screen and (min-width: 640px){
     .slider-wrapper .splide {
